@@ -9,24 +9,45 @@
 </head>
 
 <body>
-    <div class="content">
-        <h1>Welcome to Valorant-themed image slider</h1>
-        <p>Valorant Legends: A Slideshow of Iconic Agents.</p>
-        <p>Valorant Agent Showcase: Stunning Wallpapers in Motion.</p>
-        <p>Enter the Valorant Universe: Dynamic Character Slideshow.</p>
-        <p>Slide into Action: Valorant's Best Character Wallpapers.</p>
-    </div>
-    <div class="slider-container">
-        <div class="slider">
-            <div class="slide"><img src="images/omen.png" alt="Slide 1"></div>
-            <div class="slide"><img src="images/raze.png" alt="Slide 2"></div>
-            <div class="slide"><img src="images/jett.jpeg" alt="Slide 3"></div>
-            <div class="slide"><img src="images/clove.jpeg" alt="Slide 4"></div>
-            <div class="slide"><img src="images/allchar.jpg" alt="Slide 5"></div>
-        </div>
-        <button class="prev">&#10094;</button>
-        <button class="next">&#10095;</button>
-    </div>
+    <main>
+        <section class="hero">
+            <div class="content">
+                <h1>Valorant Agent Showcase</h1>
+                <p>Stunning wallpapers of iconic agents — swipe, click or use the arrows to navigate.</p>
+            </div>
+
+            <div class="slider-container" aria-roledescription="carousel" aria-label="Valorant agents slideshow">
+                <div class="slider" data-autoplay-interval="3000">
+                    <figure class="slide" data-caption="Omen">
+                        <img src="images/omen.png" alt="Omen" loading="lazy">
+                        <figcaption>Omen</figcaption>
+                    </figure>
+                    <figure class="slide" data-caption="Raze">
+                        <img src="images/raze.png" alt="Raze" loading="lazy">
+                        <figcaption>Raze</figcaption>
+                    </figure>
+                    <figure class="slide" data-caption="Jett">
+                        <img src="images/jett.jpeg" alt="Jett" loading="lazy">
+                        <figcaption>Jett</figcaption>
+                    </figure>
+                    <figure class="slide" data-caption="Clove">
+                        <img src="images/clove.jpeg" alt="Clove" loading="lazy">
+                        <figcaption>Clove</figcaption>
+                    </figure>
+                    <figure class="slide" data-caption="All Characters">
+                        <img src="images/allchar.jpg" alt="All characters" loading="lazy">
+                        <figcaption>All Characters</figcaption>
+                    </figure>
+                </div>
+
+                <button class="nav prev" aria-label="Previous slide">&#10094;</button>
+                <button class="nav next" aria-label="Next slide">&#10095;</button>
+
+                <div class="dots" role="tablist" aria-label="Slide indicators"></div>
+            </div>
+        </section>
+    </main>
+
     <script src="script.js"></script>
 </body>
 
